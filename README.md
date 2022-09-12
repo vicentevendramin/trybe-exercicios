@@ -13,12 +13,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 1.1 - _Fundamentos do Desenvolvimento Web_
 - [X] 1.1 - _Introdução - Unix & Shell_
 - [X] 1.1 - _Unix & Shell- Part 1_
-- [ ] 1.2 - _Unix & Shell- Part 2_
+- [X] 1.2 - _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
-- [ ] 2.1 - _Git - O que é e para que serve_
-- [ ] 2.2 - _Git & GitHub - Entendendo os comandos_
+- [X] 2.1 - _Git - O que é e para que serve_
+- [X] 2.2 - _Git & GitHub - Entendendo os comandos_
 - [ ] 2.3 - _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução à HTML e CSS

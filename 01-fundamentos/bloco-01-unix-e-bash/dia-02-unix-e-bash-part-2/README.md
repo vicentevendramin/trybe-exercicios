@@ -32,15 +32,15 @@
 
 3. Mude a permissão do `arquivo bunch_of_things.txt` para que todos os usuários possam ter acesso à leitura e escrita, e verifique se está correto com o comando `ls -l`;
 
-> Resultado esperado: `-rw-rw-rw- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
+    > Resultado esperado: `-rw-rw-rw- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
 
 4. Tire a permissão de escrita do arquivo `bunch_of_things.txt` para todos os usuários, verifique se está correto com o comando `ls -l`;
 
-> Resultado esperado: `-r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
+    > Resultado esperado: `-r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
 
 5. Volte à permissão do arquivo `bunch_of_things.txt` para a listada inicialmente utilizando o comando `chmod 644 bunch_of_things.txt`.
 
-> Resultado esperado: `-rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
+    > Resultado esperado: `-rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt`
 
 ## Parte III - Processos & Jobs
 
@@ -56,11 +56,11 @@
 
 6. Crie mais dois processos que rodem o comando `sleep` por 200 e 100 segundos, respectivamente.
 
-> Você deve criá-los em foreground (sem usar o `&`) e suspendê-los (apertando `ctrl+z`) após cada um começar a executar.
+    > Você deve criá-los em foreground (sem usar o `&`) e suspendê-los (apertando `ctrl+z`) após cada um começar a executar.
 
 7. Verifique que apenas o processo `sleep 300` está em execução com o comando `jobs`. Suspenda a execução desse processo.
 
-> Você vai precisar trazer o processo para foreground (`fg`) e suspendê-lo (`ctrl+z`), ou enviar um sinal.
+    > Você vai precisar trazer o processo para foreground (`fg`) e suspendê-lo (`ctrl+z`), ou enviar um sinal.
 
 8. Retome a execução do processo `sleep 100` em background com o comando `bg`.
 
