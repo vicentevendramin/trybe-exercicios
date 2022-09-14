@@ -19,11 +19,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 2.1 - _Git - O que é e para que serve_
 - [X] 2.2 - _Git & GitHub - Entendendo os comandos_
-- [ ] 2.3 - _Internet - Entendendo como ela funciona_
+- [X] 2.3 - _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução à HTML e CSS
 
-- [ ] 3.1 - _Introdução - HTML & CSS_
+- [X] 3.1 - _Introdução - HTML & CSS_
 - [ ] 3.1 - _HTML & CSS - Estruturas de página_
 - [ ] 3.2 - _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3.3 - _HTML & CSS - Seletores e posicionamento_
