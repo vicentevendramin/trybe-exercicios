@@ -4,7 +4,7 @@
 
 Antes de começar, tenha em mente que, por estar utilizando o GitHub Pages, a maneira como você versionará seu código do exercício de hoje (e dos próximos dois dias) é um pouco diferente da forma como o realizará no decorrer do curso. Para os exercícios relacionados ao seu Portfólio Web, você não utilizará seu diretório `trybe-exercicios`. 
 
-Diretório utilizado para realizar a atividade [portfolio-vicente](https://github.com/vicentevendramin/portfolio-vicente).
+Diretório utilizado para realizar a atividade [vicentevendramin.github.io](https://github.com/vicentevendramin/vicentevendramin.github.io).
 
 Você deve seguir as instruções a seguir e fazer o setup para o exercício de hoje:
 
