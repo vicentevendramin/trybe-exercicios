@@ -1,7 +1,19 @@
 /* 
-Color palette: https://coolors.co/eef0f2-63a375-deb841-39393a-3f88c5
+Color palette: https://coolors.co/eef0f2-58bc82-d62246-39393a-32965d
 */
 
+/* Change Text Selection Color */
+::-moz-selection { /* Code for Firefox */
+  color: #EEF0F2;
+  background: #32965D;
+}
+
+::selection {
+  color: #EEF0F2;
+  background: #32965D;
+}
+
+/* Page Settings */
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -16,18 +28,25 @@ p {
   margin-bottom: 5px;
 }
 
+h1 {
+  color: #32965D;
+}
+
 .header {
-  background-color:  #63A375;
+  background-color:  #EEF0F2;
   color: #39393A;
 }
 
 .title-container {
   padding: 10px 30px 0;
+  text-align: center;
 }
 
 .navigation {
-  background-color: #39393A;
+  background-color: #58BC82;
   padding: 0 30px;
+  text-align: center;
+  border: 1px solid #39393A;
 }
 
 .navigation ul {
@@ -40,21 +59,70 @@ p {
 }
 
 .navigation li a {
-  color: #EEF0F2;
+  color: #39393A;
   text-decoration: none;
   font-weight: bold;
 }
 
 .navigation li a:hover {
   text-decoration: underline;
+  color: #EEF0F2;
 }
 
 .content {
   max-width: 1200px;
   margin: auto;
+  color: #39393A;
 }
 
 .main-content {
-  width: 76%;
+  width: 70%;
   display: inline-block;
+}
+
+.side-bar {
+  background-color: #EEF0F2;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #39393A;
+  border-radius: 10px;
+}
+
+.side-bar h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.side-bar li {
+  list-style-type: square;
+  margin-left: -25px;
+}
+
+.side-bar li a {
+  text-decoration: none;
+  color: #32965D;
+}
+
+.side-bar li a:hover {
+  font-weight: bold;
+  color: #58BC82;
+}
+
+.article {
+  padding: 15px;
+}
+
+.footer {
+  background-color: #58BC82;
+  border: 1px solid #39393A;
+  color: #39393A;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
