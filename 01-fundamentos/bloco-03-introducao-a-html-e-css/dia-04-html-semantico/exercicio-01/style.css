@@ -113,6 +113,28 @@ h1 {
 
 .article {
   padding: 15px;
+  display: inline-block;
+}
+
+.article img {
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.article span {
+  color: #32965D;
+  font-weight: bold;
+}
+
+.article a {
+  text-decoration: none;
+  color: #32965D;
+  font-weight: bold;
+}
+
+.article a:hover {
+  color: #58BC82;
 }
 
 .footer {
@@ -123,6 +145,16 @@ h1 {
   padding: 20px;
   text-align: center;
   bottom: 0;
-  position: fixed;
   width: 100%;
+}
+
+.footer a {
+  color: #EEF0F2;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #32965D;
+  text-decoration: underline;
 }
