@@ -3,49 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!--insira os elementos aqui-->
     
-    <header>
-      <h1>Soco a 80km/h: Conheça o Stomatopoda.</h1>
+    <header class="header">
+      <section class="title-container">
+        <h1>Discovery Trybe</h1>
+        <h2>Soco a 80km/h: Conheça o Stomatopoda</h2>
+      </section>
+      
+      <nav class="navigation">
+        <ul>
+          <li><a href="">Página Inicial</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <nav>
-      <ul>
-        <li><a href="">Página Inicial</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contato</a></li>
-      </ul>
-    </nav>
 
-    <main>
+    <main class="content">
+      <section class="main-content">
 
-      <section>
-        <h2>Fatos sobre o Stomatopoda</h2>
+        <!-- Articles -->
         <article>
-          <p>Fatos interessantes sobre o Stomatopoda.</p>
+          <h2>Fatos sobre o Stomatopoda</h2>
+          <p>
+            Fatos interessantes sobre o Stomatopoda.
+          </p>         
         </article>
-      </section>
 
-      <section>
-        <h2>Subtítulo</h2>
         <article>
-          <p>Nome científico "Odontodactylus scyllarus"</p>
-          <p>Reino, Filo, Subfilo, Classe, Subclasse e Ordem.</p>
+          <h2>Subtítulo</h2>
+          <p>
+            Nome científico "Odontodactylus scyllarus". Reino, Filo, Subfilo, Classe, Subclasse e Ordem.
+          </p>
         </article>
-      </section>
 
-      <section>
-        <h2>Referências</h2>
         <article>
-          <p>Referências aqui.</p>
+          <h2>Referências</h2>
+          <p>
+            Referências aqui.
+          </p>
         </article>
+
+        <!-- lateral menu -->
+        <aside class="side-bar">
+          <section class="most-read">
+            <h3>Outras curiosidades</h3>
+            <ul>
+              <li><a href="">Curiosidade 1</a></li>
+              <li><a href="">Curiosidade 2</a></li>
+              <li><a href="">Curiosidade 3</a></li>
+            </ul>
+            <h3>Recomendações</h3>
+            <ul>
+              <li><a href="">Trybe</a></li>
+              <li><a href="">Trybe</a></li>
+              <li><a href="">Trybe</a></li>
+            </ul>
+          </section>
+        </aside>
       </section>
     </main>
 
-    <footer>
-      <p>Conteúdo compilado por Vicente Vendramin, 2022.</p>
+    <footer class="footer">
+      <h3>Discovery Trybe</h3>
+      <p>
+        Conteúdo compilado por Vicente Vendramin, 2022.
+      </p>
     </footer>
   </body>
 </html>
