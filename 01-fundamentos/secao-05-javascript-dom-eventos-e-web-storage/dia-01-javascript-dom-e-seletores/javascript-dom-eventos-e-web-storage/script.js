@@ -12,25 +12,58 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 */
 
 /* 1 */
-document.getElementsByTagName('p')[0].innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, temporibus debitis eaque eveniet dolorem quisquam sapiente iste libero ipsam ea ipsum sint ab adipisci reprehenderit laborum quod quos itaque. Minima.';
+function changeText(newText) {
+  const text = document.getElementsByTagName('p');
+
+  text[0].innerText = newText;
+}
+
+changeText('Me vejo estudando, trabalhando com algo que eu gosto e feliz :)');
 
 /* 2 */
-document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
+function changeYellowColor(newColor) {
+  const object = document.getElementsByClassName('main-content');
+
+  object[0].style.backgroundColor = newColor;
+}
+
+changeYellowColor('rgb(76,164,109)');
+
 
 /* 3 */
-document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+function changeRedColor(newColor) {
+  const object = document.getElementsByClassName('center-content');
+
+  object[0].style.backgroundColor = newColor;
+}
+
+changeRedColor('white');
 
 /* 4 */
-document.getElementsByTagName('h1')[0].innerText = 'Exercício - JavaScript';
+function correctsText(newText) {
+  const text = document.getElementsByTagName('h1');
+
+  text[0].innerText = newText;
+}
+
+correctsText('Exercício - JavaScript');
 
 /* 5 */
-const text = document.getElementsByTagName('p')[0].innerText;
+function modifiesText() {
+  const text = document.getElementsByTagName('p');
 
-document.getElementsByTagName('p')[0].innerText = text.toUpperCase();
+  text[0].innerText = text[0].innerText.toUpperCase()
+}
+
+modifiesText();
 
 /* 6 */
-const paragraph = document.getElementsByTagName('p');
+function displaysP() {
+  const paragraph = document.getElementsByTagName('p');
 
-for (let i = 0; i < paragraph.length; i += 1) {
+  for (let i = 0; i < paragraph.length; i += 1) {
   console.log(paragraph[i].innerText);
+  }
 }
+
+displaysP()
