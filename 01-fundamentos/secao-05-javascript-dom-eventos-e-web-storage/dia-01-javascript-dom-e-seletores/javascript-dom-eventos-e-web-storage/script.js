@@ -21,7 +21,7 @@ document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(
 document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
 
 /* 4 */
-
+document.getElementsByTagName('h1')[0].innerText = 'Exercício - JavaScript';
 
 /* 5 */
 
