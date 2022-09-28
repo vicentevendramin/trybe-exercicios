@@ -24,6 +24,8 @@ document.getElementsByClassName('center-content')[0].style.backgroundColor = 'wh
 document.getElementsByTagName('h1')[0].innerText = 'Exercício - JavaScript';
 
 /* 5 */
+const text = document.getElementsByTagName('p')[0].innerText;
 
+document.getElementsByTagName('p')[0].innerText = text.toUpperCase();
 
 /* 6 */
