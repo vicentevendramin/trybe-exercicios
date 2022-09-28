@@ -15,7 +15,7 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 document.getElementsByTagName('p')[0].innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, temporibus debitis eaque eveniet dolorem quisquam sapiente iste libero ipsam ea ipsum sint ab adipisci reprehenderit laborum quod quos itaque. Minima.';
 
 /* 2 */
-
+document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
 
 /* 3 */
 
