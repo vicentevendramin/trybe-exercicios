@@ -29,3 +29,8 @@ const text = document.getElementsByTagName('p')[0].innerText;
 document.getElementsByTagName('p')[0].innerText = text.toUpperCase();
 
 /* 6 */
+const paragraph = document.getElementsByTagName('p');
+
+for (let i = 0; i < paragraph.length; i += 1) {
+  console.log(paragraph[i].innerText);
+}
