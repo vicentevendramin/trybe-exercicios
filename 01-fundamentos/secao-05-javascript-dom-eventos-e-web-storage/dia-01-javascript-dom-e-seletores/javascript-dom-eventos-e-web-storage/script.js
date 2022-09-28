@@ -10,3 +10,20 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
 */
+
+/* 1 */
+document.getElementsByTagName('p')[0].innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, temporibus debitis eaque eveniet dolorem quisquam sapiente iste libero ipsam ea ipsum sint ab adipisci reprehenderit laborum quod quos itaque. Minima.';
+
+/* 2 */
+
+
+/* 3 */
+
+
+/* 4 */
+
+
+/* 5 */
+
+
+/* 6 */
