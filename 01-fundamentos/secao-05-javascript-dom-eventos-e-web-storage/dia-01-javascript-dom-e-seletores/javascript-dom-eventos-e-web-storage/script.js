@@ -18,7 +18,7 @@ document.getElementsByTagName('p')[0].innerText = 'Lorem ipsum dolor sit amet co
 document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
 
 /* 3 */
-
+document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
 
 /* 4 */
 
