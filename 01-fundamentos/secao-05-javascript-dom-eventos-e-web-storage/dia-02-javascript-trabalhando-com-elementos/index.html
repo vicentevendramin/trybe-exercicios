@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1
+      function newText(father, newElement, newText) {
+        const element = document.createElement(newElement);
+        const elementParent = document.querySelector(father);
+        const text = newText;
+
+        element.innerText = text;
+
+        elementParent.appendChild(element);
+      }
+
+      newText('body', 'h1', 'Exercício - JavaScript DOM');
+      
+      // 2
+      function newElement(father, newElement, newClass) {
+        const element = document.createElement(newElement);
+        const elementParent = document.querySelector(father);
+        
+        element.className = newClass;
+
+        elementParent.appendChild(element);
+      }
+
+      newElement('body', 'main', 'main-content');
+
+      // 3
+      newElement('main', 'section', 'center-content');
+
+      // 4
+      newText('section', 'p', 'Boa noite!');
+      
+      // 5
+      newElement('main', 'section', 'left-content');
+
+      // 6
+      newElement('main', 'section', 'right-content');
+
+      // 7
+      newElement('.left-content', 'img', 'small-image');
+
+      const img = document.querySelector('.small-image');
+
+      img.src = 'https://picsum.photos/200';
+
+      // 8
+      newElement('.right-content', 'ul', 'list');
+
+      for (let i = 0; i < 10; i += 1) {
+        newElement('.list', 'li', 'list-item');
+      }
+
+      function listItem(classItem, newText) {
+        const list = document.querySelector(classItem).children;
+        
+        for (let i = 0; i < list.length; i += 1) {
+          list[i].innerText = newText[i];
+        }
+      }
+
+      listItem('.list', ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']);
+
+      // 9 and 11
+      newElement('main', 'h3', 'description');
+
+      // 10
+      const h1 = document.querySelector('h1');
+
+      h1.className = 'title';
+
+      // 12
+      const main = document.querySelector('main');
+      const leftContent = document.querySelector('.left-content');
+
+      main.removeChild(leftContent);
+
+      // 13
+      const rightContent = document.querySelector('.right-content');
+
+      rightContent.style.marginRight = 'auto';
+
+      // 14
+      main.style.backgroundColor = 'green';
+
+      // 15
+      const list = document.querySelector('.list');
+
+      list.lastChild.previousSibling.remove();
+      list.lastChild.remove();
+    </script>
+  </body>
+</html>
