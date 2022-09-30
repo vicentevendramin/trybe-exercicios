@@ -104,9 +104,19 @@
       // 8
       newElement('.right-content', 'ul', 'list');
 
-      for (let i = 0; i <= 10; i += 1) {
-        newText('.list', 'li', i);
+      for (let i = 0; i < 10; i += 1) {
+        newElement('.list', 'li', 'list-item');
       }
+
+      function listItem(classItem, newText) {
+        const list = document.querySelector(classItem).children;
+        
+        for (let i = 0; i < list.length; i += 1) {
+          list[i].innerText = newText[i];
+        }
+      }
+
+      listItem('.list', ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']);
 
       // 9 and 11
       newElement('main', 'h3', 'description');
