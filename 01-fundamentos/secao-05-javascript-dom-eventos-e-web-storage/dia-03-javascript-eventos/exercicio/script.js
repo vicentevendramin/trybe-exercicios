@@ -46,3 +46,22 @@ function createButton() {
 }
 
 createButton();
+
+const button = document.querySelector('#btn-holiday');
+let colorSelected = 1;
+
+button.addEventListener('click', function(){
+  const holiday = document.querySelectorAll('.holiday');
+
+  if (colorSelected === 1) {
+    for (let index = 0; index < holiday.length; index += 1) {
+      holiday[index].style.backgroundColor = 'yellow';
+    }
+    colorSelected = 2;
+  } else {
+    for (let index = 0; index < holiday.length; index += 1) {
+      holiday[index].style.backgroundColor = 'rgb(238,238,238)';
+    }
+    colorSelected = 1;
+  }
+});
