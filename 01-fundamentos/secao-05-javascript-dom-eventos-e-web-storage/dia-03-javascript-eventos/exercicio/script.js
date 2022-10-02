@@ -177,3 +177,34 @@ function setDayColor() {
 }
 
 setDayColor();
+
+function createNewTask() {
+  const getInput = document.querySelector('#task-input');
+  const addInput = document.querySelector('#btn-add');
+  const getTaskList = document.querySelector('.task-list');
+
+  addInput.addEventListener('click', function(){
+    if (getInput.value.length > 0) {
+      const newTask = document.createElement('li');
+      newTask.innerText = getInput.value;
+
+      getTaskList.appendChild(newTask);
+      getInput.value = '';
+    } else {
+      alert('Error: Digite pelo menos 1 caractere');
+    }
+  });
+  getInput.addEventListener('keyup', function(event){
+    if (event.key === 'Enter' && getInput.value.length > 0) {
+      const newTask = document.createElement('li');
+      newTask.innerText = getInput.value;
+
+      getTaskList.appendChild(newTask);
+      getInput.value = '';
+    } else {
+      alert('Error: Digite pelo menos 1 caractere');
+    }
+  });
+}
+
+createNewTask();
