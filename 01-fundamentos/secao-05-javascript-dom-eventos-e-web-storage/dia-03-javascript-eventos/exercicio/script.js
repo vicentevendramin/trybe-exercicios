@@ -128,18 +128,17 @@ function createTask(myTask) {
   tasks.appendChild(newTask);
 }
 
-createTask('Projeto');
-
 // Exercise 8
 function newTaskDiv(color) {
   const tasks = document.querySelector('.my-tasks');
   const newTask = document.createElement('div');
-
+  
   newTask.className = 'task';
   newTask.style.backgroundColor = color;
   tasks.appendChild(newTask);
 }
 
+createTask('Projeto');
 newTaskDiv('green');
 
 // Exercise 9
@@ -157,3 +156,24 @@ function setTaskClass() {
 }
 
 setTaskClass();
+
+// Exercise 10
+function setDayColor() {
+  const selectedTask = document.getElementsByClassName('task selected');
+  const days = document.querySelector('#days');
+  const taskDiv = document.querySelector('.task');
+  const taskColor = taskDiv.style.backgroundColor;
+
+  days.addEventListener('click', function(event){
+    const eventColor = event.target.style.color;
+
+    if (selectedTask.length > 0 && eventColor !== taskColor) {
+      const color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventColor === taskColor) {
+      event.target.style.color = 'rgb(119,119,119)'
+    }
+  });
+}
+
+setDayColor();
