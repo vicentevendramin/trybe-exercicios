@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
+// Exercise 1
 function createDaysOfTheMonth() {
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const monthDaysList = document.querySelector('#days');
@@ -34,6 +35,7 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
+// Exercise 2
 function createButtonHoliday() {
   const button = document.createElement('button');
   const div = document.querySelector('.buttons-container');
@@ -47,6 +49,7 @@ function createButtonHoliday() {
 
 createButtonHoliday();
 
+// Exercise 3
 const holidayButton = document.querySelector('#btn-holiday');
 let colorSelected = 1;
 
@@ -66,6 +69,7 @@ holidayButton.addEventListener('click', function(){
   }
 });
 
+// Exercise 4
 function createFridayButton() {
   const friday = document.createElement('button');
   const div = document.querySelector('.buttons-container');
@@ -79,6 +83,7 @@ function createFridayButton() {
 
 createFridayButton();
 
+// Exercise 5
 const fridayButton = document.querySelector('#btn-friday');
 let text = 1;
 
@@ -99,6 +104,7 @@ fridayButton.addEventListener('click', function(){
   }
 });
 
+// Exercise 6
 const daysOfTheMonth = document.querySelectorAll('.day');
 
 for (let index = 0; index < daysOfTheMonth.length; index += 1) {
@@ -113,10 +119,10 @@ for (let index = 0; index < daysOfTheMonth.length; index += 1) {
   });
 }
 
-function createTask() {
+// Exercise 7
+function createTask(myTasks) {
   const tasks = document.querySelector('.my-tasks');
-  const myTasks = ['Treinar', 'Estudar', 'Fazer o Projeto', 'Reunião'];
-  
+
   for (let index = 0; index < myTasks.length; index += 1) {
     const newTask = document.createElement('span');
     newTask.innerHTML = myTasks[index];
@@ -125,4 +131,4 @@ function createTask() {
   }
 }
 
-createTask();
+createTask(['Treinar', 'Estudar', 'Fazer o Projeto', 'Reunião']);
