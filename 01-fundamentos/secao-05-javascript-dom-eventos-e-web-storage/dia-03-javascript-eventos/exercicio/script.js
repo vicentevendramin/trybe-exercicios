@@ -141,3 +141,19 @@ function newTaskDiv(color) {
 }
 
 newTaskDiv('green');
+
+// Exercise 9
+function setTaskClass() {
+  const selectedTask = document.getElementsByClassName('task selected');
+  const myTasks = document.querySelector('.task');
+
+  myTasks.addEventListener('click', function(){
+    if (selectedTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+setTaskClass();
