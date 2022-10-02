@@ -120,15 +120,24 @@ for (let index = 0; index < daysOfTheMonth.length; index += 1) {
 }
 
 // Exercise 7
-function createTask(myTasks) {
+function createTask(myTask) {
   const tasks = document.querySelector('.my-tasks');
+  const newTask = document.createElement('span');
 
-  for (let index = 0; index < myTasks.length; index += 1) {
-    const newTask = document.createElement('span');
-    newTask.innerHTML = myTasks[index];
-    newTask.className = 'my-tasks';
-    tasks.appendChild(newTask);
-  }
+  newTask.innerHTML = myTask;
+  tasks.appendChild(newTask);
 }
 
-createTask(['Treinar', 'Estudar', 'Fazer o Projeto', 'Reunião']);
+createTask('Projeto');
+
+// Exercise 8
+function newTaskDiv(color) {
+  const tasks = document.querySelector('.my-tasks');
+  const newTask = document.createElement('div');
+
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+  tasks.appendChild(newTask);
+}
+
+newTaskDiv('green');
