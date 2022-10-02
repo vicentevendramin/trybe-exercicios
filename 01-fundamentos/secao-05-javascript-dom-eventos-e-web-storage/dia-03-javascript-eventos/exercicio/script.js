@@ -112,3 +112,17 @@ for (let index = 0; index < daysOfTheMonth.length; index += 1) {
     daysOfTheMonth[index].style.fontSize = '20px';
   });
 }
+
+function createTask() {
+  const tasks = document.querySelector('.my-tasks');
+  const myTasks = ['Treinar', 'Estudar', 'Fazer o Projeto', 'Reunião'];
+  
+  for (let index = 0; index < myTasks.length; index += 1) {
+    const newTask = document.createElement('span');
+    newTask.innerHTML = myTasks[index];
+    newTask.className = 'my-tasks';
+    tasks.appendChild(newTask);
+  }
+}
+
+createTask();
