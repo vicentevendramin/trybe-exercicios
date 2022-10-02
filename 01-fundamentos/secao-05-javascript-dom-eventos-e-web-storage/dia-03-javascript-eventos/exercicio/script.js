@@ -98,3 +98,17 @@ fridayButton.addEventListener('click', function(){
     text = 1;
   }
 });
+
+const daysOfTheMonth = document.querySelectorAll('.day');
+
+for (let index = 0; index < daysOfTheMonth.length; index += 1) {
+  daysOfTheMonth[index].addEventListener('mouseover', function(){
+    daysOfTheMonth[index].style.fontSize = '30px';
+  });
+}
+
+for (let index = 0; index < daysOfTheMonth.length; index += 1) {
+  daysOfTheMonth[index].addEventListener('mouseout', function(){
+    daysOfTheMonth[index].style.fontSize = '20px';
+  });
+}
