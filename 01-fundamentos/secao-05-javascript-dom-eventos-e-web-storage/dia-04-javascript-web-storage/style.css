@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#title {
+  background-color: green;
+  color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 20px auto;
+  width: 70%;
+  display: flex;
+}
+
+#inputs {
+  margin: 40px auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
