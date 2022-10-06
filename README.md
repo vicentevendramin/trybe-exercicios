@@ -45,16 +45,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5.2 - _JavaScript - Trabalhando com elementos_
 - [X] 5.3 - _JavaScript - Eventos_
 - [X] 5.4 - _JavaScript - Web Storage_
-- [ ] 5.5 - _Fundamentos - JavaScript - Projetos_
-- [ ] 5.5 - _Projeto - Arte com Pixels_
-- [ ] 5.6 - _(Bônus) Projeto - Lista de tarefas_
+- [X] 5.5 - _Fundamentos - JavaScript - Projetos_
+- [X] 5.5 - _Projeto - Arte com Pixels_
+- [X] 5.6 - _(Bônus) Projeto - Lista de tarefas_
 - [ ] 5.7 - _(Bônus) Projeto - Meme Generator_
 - [ ] 5.7 - _(Bônus) Projeto - Adivinhe a Cor_
 - [ ] 5.7 - _(Bônus) Projeto - Carta Misteriosa_
 
 ##### Seção 6: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6.1 - _HTML & CSS - Forms_
+- [X] 6.1 - _HTML & CSS - Forms_
 - [ ] 6.2 - _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6.3 - _Introdução - CSS Flexbox_
 - [ ] 6.3 - _CSS Flexbox - Parte 1_
