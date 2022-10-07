@@ -4,59 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>TrybeTrip</title>
 </head>
 <body>
   <header>
-    <h1>TrybeTrip</h1>
+    <h1 class="display-4 text-muted">TrybeTrip</h1>
   </header>
 
-  <form action="" method="get">
-    <section class="line-content">
+  <form action="" method="GET">
+    <section class="mb-3">
       <label for="name">Nome:</label>
-      <input type="text" id="name" minlength="10" maxlength="40" autocomplete="off">
+      <input class="form-control" type="text" id="name" minlength="10" maxlength="40" autocomplete="off">
     </section>
 
-    <section class="line-content">
+    <section class="mb-3">
       <label for="email">Email: </label>
-      <input type="email" id="email" minlength="10" maxlength="50" autocomplete="off">
+      <input class="form-control" type="email" id="email" minlength="10" maxlength="50" autocomplete="off">
     </section>
 
-    <section class="line-content">
-      <input type="radio" name="option" id="city">
-      <label for="city">Cidade</label>
-      <input type="radio" name="option" id="field">
-      <label for="field">Campo</label>
-      <input type="radio" name="option" id="beach">
-      <label for="beach">Praia</label>
-      <input type="radio" name="option" id="mountains">
-      <label for="mountains">Montanhas</label>
+    <section class="mb-3">
+      <label for="">Destino Preferido:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" id="city">
+        <label class="form-check-label" for="city">Cidade</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" id="field">
+        <label class="form-check-label" for="field">Campo</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" id="beach">
+        <label class="form-check-label" for="beach">Praia</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" id="mountains">
+        <label class="form-check-label" for="mountains">Montanhas</label>
+      </div>
     </section>
 
-    <section class="line-content">
+    <section class="mb-3">
       <label for="text">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
-      <textarea name="text" id="text" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea class="form-control" name="text" id="text" cols="30" rows="10" maxlength="500"></textarea>
     </section>
 
-    <section class="line-content">
+    <section class="mb-3">
       <label for="date">Qual a melhor data para realizar sua viagem?</label><br>
-      <input type="date" name="date" id="date">
+      <input class="form-control" type="date" name="date" id="date">
     </section>
 
-    <section class="line-content">
-      <label for="opt">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-      <input type="checkbox" name="opt" id="opt">
-    </section>
-
-    <section class="line-content">
-      <label for="terms">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-      <input type="checkbox" name="terms" id="terms" required>
+    <section class="mb-3">
+      <div class="form-check">
+        <label class="form-check-label" for="opt">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <input class="form-check-input" type="checkbox" name="opt" id="opt">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="terms">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input class="form-check-input" type="checkbox" name="terms" id="terms" required>
+      </div>
     </section>
 
     <section>
-      <button type="submit" id="submit">Enviar</button>
-      <button type="reset" id="reset">Limpar</button>
+      <button class="btn btn-success" type="submit" id="submit">Enviar</button>
+      <button class="btn btn-secondary" type="reset" id="reset">Limpar</button>
     </section>
   </form>
   <script src="script.js"></script>
