@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 5px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px black;
+  top: 0;
+}
+
+header p {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+
+nav {
+  display: none;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:visited, a:hover, a:active {
+  color: black;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+main, footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.aside-two {
+  margin-top: 30px;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 551px) {
+  main {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .aside-two {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  header {
+    justify-content: space-around;
+  }
+
+  main, footer {
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+  }
+
+  nav {
+    display: initial;
+  }
+
+  footer {
+    margin-bottom: 60px;
+  }
+}
