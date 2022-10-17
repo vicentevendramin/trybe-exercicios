@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  margin-top: 33vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: white;
+  padding: 30px;
+}
+
+button {
+  width: 20%;
+}
