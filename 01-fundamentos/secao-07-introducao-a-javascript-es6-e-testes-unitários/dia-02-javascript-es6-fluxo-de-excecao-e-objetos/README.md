@@ -71,7 +71,7 @@ Aparentemente está tudo funcionando, mas a aplicação não possui fluxo de exc
 
 Para os exercícios a seguir, use o seguinte código:
 
-``` HTML
+``` JavaScript
 const order = {
   name: 'Rafael Andrade',
   phoneNumber: '11-98763-1416',
