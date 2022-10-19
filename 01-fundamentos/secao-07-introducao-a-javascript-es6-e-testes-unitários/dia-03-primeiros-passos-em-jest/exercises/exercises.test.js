@@ -1,4 +1,4 @@
-const { sum, myRemove } = require('./exercises.js');
+const { sum, myRemove, myFizzBuzz } = require('./exercises.js');
 
 // Exercise 1
 describe('Exercise 1', () => {
@@ -12,4 +12,13 @@ describe('Exercise 2', () => {
   it('Retorno de myRemove([1, 2, 3, 4], 3) é [1, 2, 4]', () => expect([1, 2, 4]).toEqual(myRemove([1, 2, 3, 4], 3)));
   it('Retorno de myRemove([1, 2, 3, 4], 3) não é [1, 2, 3, 4]', () => expect([1, 2, 3, 4]).not.toEqual(myRemove([1, 2, 3, 4], 3)));
   it('Retorno de myRemove([1, 2, 3, 4], 5) é [1, 2, 3, 4]', () => expect([1, 2, 3, 4]).toEqual(myRemove([1, 2, 3, 4], 5)));
+});
+
+// Exercise 3
+describe('Exercise 3', () => {
+  it('Retorno de myFizzBuzz(15) é fizzbuzz', () => expect('fizzbuzz').toEqual(myFizzBuzz(15)));
+  it('Retorno de myFizzBuzz(3) é fizz', () => expect('fizz').toEqual(myFizzBuzz(3)));
+  it('Retorno de myFizzBuzz(5) é buzz', () => expect('buzz').toEqual(myFizzBuzz(5)));
+  it('Retorno de myFizzBuzz(7) é 7', () => expect(7).toEqual(myFizzBuzz(7)));
+  it('Retorno de myFizzBuzz("Trybe") é false', () => expect(false).toEqual(myFizzBuzz("Trybe")));
 });
