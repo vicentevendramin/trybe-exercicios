@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz, encode, decode } = require('./exercises.js');
+const { sum, myRemove, myFizzBuzz, encode, decode, techList } = require('./exercises.js');
 
 // Exercise 1
 describe('Exercise 1', () => {
@@ -28,4 +28,41 @@ describe('Exercise 4', () => {
   it('Vogais "a, e, i, o, u" são convertidas em "1, 2, 3, 4 e 5"', () => expect('12345').toEqual(encode('aeiou')));
   it('Números "1, 2, 3, 4 e 5" são convertidas em "a, e, i, o, u"', () => expect('aeiou').toEqual(decode('12345')));
   it('Letas "a, b, e, i, j, o, u" são convertidas em "1, 2, 3, 4 e 5', () => expect('1b23j45').toEqual(encode('abeijou')));
+});
+
+// Exercise 5
+describe('Testa a função techList', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
 });

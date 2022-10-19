@@ -53,4 +53,21 @@ function decode(text) {
   return caracters.join('');
 }
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode };
+// Exercise 5
+const techList = (array, string) => {
+  if (array.length === 0) return 'Vazio!';
+
+  const sortedArray = array.sort();
+  const list = [];
+
+  for (let i = 0; i < sortedArray.length; i += 1) {
+    list.push({
+      tech: sortedArray[i],
+      name: string
+    });
+  }
+
+  return list;
+}
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
