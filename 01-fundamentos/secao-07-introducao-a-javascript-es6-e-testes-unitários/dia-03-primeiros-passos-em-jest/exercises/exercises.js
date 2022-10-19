@@ -70,4 +70,22 @@ const techList = (array, string) => {
   return list;
 }
 
-module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList };
+// Exercise 6
+const hydrate = (string) => {
+  const splitedString = string.split('');
+  let glasses = 0;
+
+  for (let i = 0; i < splitedString.length; i += 1) {
+    const numberInString = parseInt(splitedString[i]);
+
+    if (numberInString) glasses += numberInString;
+  }
+
+  let glass = 'copo';
+
+  if (glasses > 1) glass = 'copos';
+  
+  return `${glasses} ${glass} de água`;
+}
+
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList, hydrate };
