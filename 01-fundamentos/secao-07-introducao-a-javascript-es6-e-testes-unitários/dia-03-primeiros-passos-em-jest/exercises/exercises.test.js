@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require('./exercises.js');
+const { sum, myRemove, myFizzBuzz, encode, decode } = require('./exercises.js');
 
 // Exercise 1
 describe('Exercise 1', () => {
@@ -21,4 +21,11 @@ describe('Exercise 3', () => {
   it('Retorno de myFizzBuzz(5) é buzz', () => expect('buzz').toEqual(myFizzBuzz(5)));
   it('Retorno de myFizzBuzz(7) é 7', () => expect(7).toEqual(myFizzBuzz(7)));
   it('Retorno de myFizzBuzz("Trybe") é false', () => expect(false).toEqual(myFizzBuzz("Trybe")));
+});
+
+// Exercise 4
+describe('Exercise 4', () => {
+  it('Vogais "a, e, i, o, u" são convertidas em "1, 2, 3, 4 e 5"', () => expect('12345').toEqual(encode('aeiou')));
+  it('Números "1, 2, 3, 4 e 5" são convertidas em "a, e, i, o, u"', () => expect('aeiou').toEqual(decode('12345')));
+  it('Letas "a, b, e, i, j, o, u" são convertidas em "1, 2, 3, 4 e 5', () => expect('1b23j45').toEqual(encode('abeijou')));
 });
