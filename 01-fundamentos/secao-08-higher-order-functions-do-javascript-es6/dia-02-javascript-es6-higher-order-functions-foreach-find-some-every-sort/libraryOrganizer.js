@@ -75,7 +75,7 @@ console.log(authorBornIn1947(books));
 function smallerName(books) {
   let nameBook;
 
-  books.forEach((book, index) => {
+  books.forEach((book) => {
     if (!nameBook || book.name.length < nameBook.length) {
       nameBook = book.name;
     }
@@ -87,3 +87,8 @@ function smallerName(books) {
 console.log(smallerName(books));
 
 // Exercise 03
+function getNamedBook(books) {
+  return books.find((book) => book.name.length === 26);
+}
+
+console.log(getNamedBook(books));
