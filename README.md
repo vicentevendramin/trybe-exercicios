@@ -81,13 +81,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 1.1 - _Ambiente de desenvolvimento_
 - [X] 1.2 - _JavaScript Assíncrono - Promises e fetch_
-- [ ] 1.3 - _Prática - Casa de câmbio_
-- [ ] 1.4 - _Async, await e testes assíncronos_
-- [ ] 1.5 - _Projeto - Carrinho de compras_
+- [X] 1.3 - _Prática - Casa de câmbio_
+- [X] 1.4 - _Async, await e testes assíncronos_
+- [X] 1.5 - _Projeto - Carrinho de compras_
 
 ##### Seção 2: Introdução ao React
 
-- [ ] 2.1 - _'Hello, world!' no React!_
+- [X] 2.1 - _'Hello, world!' no React!_
 - [ ] 2.2 - _Componentes React!_
 - [ ] 2.3 - _Projeto - Solar System_
 
