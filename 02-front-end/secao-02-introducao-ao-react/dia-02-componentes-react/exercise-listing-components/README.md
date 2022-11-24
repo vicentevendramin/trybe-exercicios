@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Exercício - renderizando usuários
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crie uma aplicação React na sua máquina via `create-react-app` com o nome `exercise-listing-components`, crie os componentes `Image` e `UserProfile` mostrados abaixo. Além disso, altere o componente `App` conforme segue:
 
-## Available Scripts
+``` JavaScript
+// arquivo Image.js
+import React from 'react';
 
-In the project directory, you can run:
+class Image extends React.Component {
+  render() {
+    const { source, alternativeText } = this.props;
+    return <img src={ source } alt={ alternativeText } />;
+  }
+}
 
-### `npm start`
+export default Image;
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+``` JavaScript
+// arquivo UserProfile.js
+import React from 'react';
+import Image from './Image';
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+class UserProfile extends React.Component {
+  render() {
+    const { user } = this.props;
+    return (
+      <div>
+        <p> { user.name } </p>
+        <p> { user.email } </p>
+        <Image source={ user.avatar } alternativeText="User avatar" />
+      </div>
+    );
+  }
+}
 
-### `npm test`
+export default UserProfile;
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` JavaScript
+// arquivo App.js, criado pelo create-react-app, modificado
+import React from 'react';
+import './App.css';
+import UserProfile from './UserProfile';
 
-### `npm run build`
+class App extends React.Component {
+  render() {
+    const joao = {
+      id: 102,
+      name: 'João',
+      email: 'joao@gmail.com',
+      avatar: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png'
+    };
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    const amelia = {
+      id: 77,
+      name: 'Amélia',
+      email: 'amelia@gmail.com',
+      avatar: 'https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png'
+    };
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    return (
+      <div className="App">
+        <UserProfile user={ joao } />
+        <UserProfile user={ amelia } />
+      </div>
+    );
+  }
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export default App;
+```
 
-### `npm run eject`
+O componente `App` possui dois componentes `UserProfile` como filhos. Que tal gerarmos esses componentes dinamicamente? Isso pode ser feito utilizando a HOF `map`, da seguinte forma:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+``` JavaScript
+// arquivo App.js, criado pelo create-react-app, modificado
+import React from 'react';
+import './App.css';
+import UserProfile from './UserProfile';
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+class App extends React.Component {
+  render() {
+    const users = [
+      {
+        id: 102,
+        name: 'João',
+        email: 'joao@gmail.com',
+        avatar: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png'
+      },
+      {
+        id: 77,
+        name: 'Amélia',
+        email: 'amelia@gmail.com',
+        avatar: 'https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png'
+      }
+    ];
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    return (
+      <div className="App">
+        {users.map((user) => <UserProfile user={ user } />)}
+      </div>
+    );
+  }
+}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+export default App;
+```
 
-## Learn More
+Entretanto, a geração dinâmica dos componentes está incompleta, pois é preciso passar uma `key` para `UserProfile`. Se você copiar o código acima no seu projeto, executar o comando `npm start` para inicializar o programa e acessar o `console` do seu navegador, você notará a existência de um `warning` levantado pelo React, justamente por estar faltando o atributo `key`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dito isso, altere a chamada do componente de `UserProfile` de forma que a lista seja gerada dinamicamente de maneira adequada.
