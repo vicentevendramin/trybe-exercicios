@@ -1,0 +1,28 @@
+import { SEARCH_BEGIN, SEARCH_SUCCESS, SEARCH_ERROR } from '../actions/actionTypes';
+
+export const searchBegin = () => ({
+  type: SEARCH_BEGIN
+});
+
+export const searchSuccess = (character) => ({
+  type: SEARCH_SUCCESS,
+  character
+});
+
+export const searchFailure = (error) => ({
+  type: SEARCH_ERROR,
+  error
+});
+
+export function thunkCharacter(name) {
+  return async (dispatch) => {
+    try {
+      dispatch(searchBegin());
+      const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${name}`);
+      const data = await response.json();
+      dispatch(searchSuccess(data));
+    } catch (error) {
+      dispatch(searchFailure(error));
+    }
+  };
+};
