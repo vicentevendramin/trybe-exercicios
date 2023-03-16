@@ -75,7 +75,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8.5 - _JavaScript ES6 - spread operator, parâmetros rest, destructuring e mais_
 - [X] 8.6 - _Projeto - Zoo functions_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Seção 1: Introdução ao Front-end e JavaScript assíncrono
 
@@ -121,29 +121,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 7.2 - _Usando o Redux no React_
 - [X] 7.3 - _Usando o Redux no React - Prática_
 - [X] 7.4 - _Usando o Redux no React - Actions Assíncronas_
-- [ ] 7.5 - _Testes em React-Redux_
-- [ ] 7.6 - _Projeto - Trybe Wallet_
+- [X] 7.5 - _Testes em React-Redux_
+- [X] 7.6 - _Projeto - Trybe Wallet_
 
 ##### Seção 8: Projeto Jogo de Trivia
 
-- [ ] 8.1 - _Projeto - Jogo de Trivia_
+- [X] 8.1 - _Projeto - Jogo de Trivia_
 
 ##### Seção 9: Context API e React Hooks
 
-- [ ] 9.1 - _Context API do React_
-- [ ] 9.2 - _React Hooks - useState e useContext_
-- [ ] 9.3 - _React Hooks - useEffect e Hooks customizados_
-- [ ] 9.4 - _Projeto - StarWars Datatable com Context API e Hooks_
+- [X] 9.1 - _Context API do React_
+- [X] 9.2 - _React Hooks - useState e useContext_
+- [X] 9.3 - _React Hooks - useEffect e Hooks customizados_
+- [X] 9.4 - _Projeto - StarWars Datatable com Context API e Hooks_
 
 ##### Seção 10: Projeto App de Receitas
 
-- [ ] 10.1 - _Projeto - App de Receitas_
+- [X] 10.1 - _Projeto - App de Receitas_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Seção 1: Docker: Utilizando Containers
 
-- [ ] 1.1 - _Utilizando Containers - Docker_
+- [X] 1.1 - _Utilizando Containers - Docker_
 - [ ] 1.2 - _Manipulando Imagens no Docker_
 - [ ] 1.3 - _Orquestrando Containers com Docker Compose_
 - [ ] 1.4 - _Projeto - Docker Todo-List_
